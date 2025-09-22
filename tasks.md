@@ -3,11 +3,11 @@
 ## 1. Project Setup & Dependencies
 
 ### 1.1 Environment Configuration
-- Install Playwright in virtual environment
-- Install browser binaries for Chrome/Chromium
-- Add Playwright to project dependencies
-- Configure pytest for test framework
-- Set up development vs production browser modes
+[x] Install Playwright in virtual environment
+[x] Install browser binaries for Chrome/Chromium
+[x] Add Playwright to project dependencies
+[x] Configure pytest for test framework
+[x] Set up development vs production browser modes
 
 ### 1.2 Project Structure
 - Create `tests/` directory for Playwright tests
