@@ -1,0 +1,299 @@
+{
+  "plan_version": "1.0",
+  "merchant": "HEB",
+  "fulfillment": {
+    "type": "curbside_or_delivery",
+    "store_selection": "ask_user_first",
+    "zip_fallback": "78701"
+  },
+  "preferences": {
+    "prefer_store_brands": true,
+    "budget_mode": "good_value_not_ultra_premium",
+    "require_human_approval_before_checkout": true,
+    "units": "US",
+    "notes": [
+      "Feta: block preferred over pre-crumbled",
+      "Salmon: skin-on",
+      "Dressings: have DIY, but keep 1 bottle as backup"
+    ]
+  },
+  "substitutions_policy": {
+    "allow_brand_subs": true,
+    "allow_size_subs_within_percent": 25,
+    "must_confirm_alcohol_or_age_restricted": true,
+    "must_confirm_price_delta_percent": 15,
+    "always_ask_for": ["steaks", "salmon", "shrimp", "feta_block", "greek_dressing"]
+  },
+  "items": [
+    {
+      "category": "produce",
+      "name": "English cucumbers",
+      "query": "english cucumber",
+      "target_size": "each",
+      "quantity": 3,
+      "notes": "2 for Greek/orzo salads, 1 for cucumber salad",
+      "acceptable_subs": ["hot house cucumber"]
+    },
+    {
+      "category": "produce",
+      "name": "Roma tomatoes",
+      "query": "roma tomato",
+      "target_size": "each",
+      "quantity": 4,
+      "acceptable_subs": ["vine tomatoes", "campari tomatoes"]
+    },
+    {
+      "category": "produce",
+      "name": "Cherry tomatoes",
+      "query": "cherry tomatoes pint",
+      "target_size": "1 pint",
+      "quantity": 1,
+      "acceptable_subs": ["grape tomatoes 1 pint"]
+    },
+    {
+      "category": "produce",
+      "name": "Zucchini",
+      "query": "zucchini",
+      "target_size": "each",
+      "quantity": 2
+    },
+    {
+      "category": "produce",
+      "name": "Red onion",
+      "query": "red onion",
+      "target_size": "each",
+      "quantity": 1
+    },
+    {
+      "category": "produce",
+      "name": "Yellow onion",
+      "query": "yellow onion",
+      "target_size": "each",
+      "quantity": 1
+    },
+    {
+      "category": "produce",
+      "name": "Baby spinach",
+      "query": "baby spinach 10 oz",
+      "target_size": "8–10 oz bag",
+      "quantity": 1,
+      "acceptable_subs": ["regular spinach 8–10 oz"]
+    },
+    {
+      "category": "produce",
+      "name": "Parsley",
+      "query": "fresh parsley bunch",
+      "target_size": "bunch",
+      "quantity": 1
+    },
+    {
+      "category": "produce",
+      "name": "Dill (optional)",
+      "query": "fresh dill",
+      "target_size": "bunch",
+      "quantity": 1,
+      "optional": true
+    },
+    {
+      "category": "produce",
+      "name": "Lemons",
+      "query": "lemons bag",
+      "target_size": "bag (~2 lb)",
+      "quantity": 1
+    },
+    {
+      "category": "produce",
+      "name": "Garlic",
+      "query": "garlic bulb",
+      "target_size": "bulb",
+      "quantity": 1
+    },
+    {
+      "category": "produce",
+      "name": "Mushrooms",
+      "query": "baby bella mushrooms",
+      "target_size": "1 lb",
+      "quantity": 1,
+      "acceptable_subs": ["cremini 16 oz", "white mushrooms 16 oz"]
+    },
+
+    {
+      "category": "meat_seafood",
+      "name": "Ribeye or Strip Steaks",
+      "query": "beef ribeye steak",
+      "target_size": "2 steaks (~10–14 oz each)",
+      "quantity": 2,
+      "notes": "Ask cut thickness ~1 inch; choose marbling over thin cut",
+      "require_confirm": true
+    },
+    {
+      "category": "meat_seafood",
+      "name": "Ground beef",
+      "query": "ground beef 85/15",
+      "target_size": "2 lb total",
+      "quantity": 2,
+      "pack_size": "1 lb each"
+    },
+    {
+      "category": "meat_seafood",
+      "name": "Chicken breasts or thighs",
+      "query": "boneless skinless chicken",
+      "target_size": "1.5–2 lb",
+      "quantity": 1,
+      "notes": "Prefer thighs for juiciness; either is fine"
+    },
+    {
+      "category": "meat_seafood",
+      "name": "Salmon fillets (skin-on)",
+      "query": "atlantic salmon fillet skin on",
+      "target_size": "~1 lb total",
+      "quantity": 1,
+      "require_confirm": true
+    },
+    {
+      "category": "meat_seafood",
+      "name": "Shrimp (precooked ok)",
+      "query": "shrimp 31/40 peeled deveined",
+      "target_size": "1 lb",
+      "quantity": 1,
+      "acceptable_subs": ["raw 31/40 peeled deveined"]
+    },
+    {
+      "category": "center_store",
+      "name": "Falafel or Chickpeas",
+      "query": "falafel mix OR canned chickpeas low sodium",
+      "target_size": "1 pkg falafel OR 15.5 oz cans",
+      "quantity": 1,
+      "notes": "If chickpeas, get 2 cans",
+      "acceptable_subs": ["frozen falafel (HEB or Cedarlane)"]
+    },
+
+    {
+      "category": "dairy",
+      "name": "Feta cheese (block)",
+      "query": "feta block 8 oz",
+      "target_size": "8 oz",
+      "quantity": 1,
+      "notes": "Block preferred; will crumble"
+    },
+    {
+      "category": "dairy",
+      "name": "Plain Greek yogurt",
+      "query": "greek yogurt plain 32 oz",
+      "target_size": "32 oz tub",
+      "quantity": 1,
+      "acceptable_subs": ["24 oz tub"]
+    },
+
+    {
+      "category": "bakery_grains",
+      "name": "Orzo",
+      "query": "orzo 16 oz",
+      "target_size": "16 oz",
+      "quantity": 1
+    },
+    {
+      "category": "bakery_grains",
+      "name": "Jasmine rice",
+      "query": "jasmine rice 2 lb",
+      "target_size": "2 lb",
+      "quantity": 1,
+      "acceptable_subs": ["5 lb if cheaper per lb"]
+    },
+    {
+      "category": "bakery_grains",
+      "name": "Pita or Naan",
+      "query": "pita 6 count OR naan 4 count",
+      "target_size": "1 pack",
+      "quantity": 1
+    },
+
+    {
+      "category": "pantry",
+      "name": "Kalamata olives (pitted)",
+      "query": "kalamata olives pitted 12 oz",
+      "target_size": "12–16 oz jar",
+      "quantity": 1
+    },
+    {
+      "category": "pantry",
+      "name": "Tahini (optional)",
+      "query": "tahini 10 oz",
+      "target_size": "10–16 oz jar",
+      "quantity": 1,
+      "optional": true
+    },
+
+    {
+      "category": "snacks_fruit",
+      "name": "Clementines or mandarins",
+      "query": "clementines bag",
+      "target_size": "bag (~2–3 lb)",
+      "quantity": 1
+    },
+    {
+      "category": "snacks_fruit",
+      "name": "Bananas",
+      "query": "bananas",
+      "target_size": "bunch",
+      "quantity": 1
+    },
+    {
+      "category": "snacks_fruit",
+      "name": "Mixed nuts or roasted almonds",
+      "query": "roasted almonds 16 oz OR mixed nuts",
+      "target_size": "12–16 oz",
+      "quantity": 1
+    },
+    {
+      "category": "dips",
+      "name": "Hummus",
+      "query": "classic hummus 10 oz",
+      "target_size": "8–12 oz",
+      "quantity": 1
+    },
+
+    {
+      "category": "dressing_backup",
+      "name": "Greek dressing (backup)",
+      "query": "Ken's Simply Vinaigrette Greek OR John the Greek Original",
+      "target_size": "12 oz",
+      "quantity": 1,
+      "notes": "Only if DIY dressing not preferred"
+    }
+  ],
+  "recipes_map": {
+    "sat_steak_mushrooms_orzo_roastveg_cucumber": {
+      "key_items": ["steaks", "mushrooms", "orzo", "zucchini", "cherry tomatoes", "yellow onion", "lemons", "cucumber", "feta"]
+    },
+    "sun_souvlaki_greek_salad_rice": {
+      "key_items": ["chicken", "rice", "cucumber", "roma tomatoes", "red onion", "olives", "feta", "yogurt", "lemons"]
+    },
+    "mon_meatballs_orzo_salad": {
+      "key_items": ["ground beef", "orzo", "cucumber", "roma tomatoes", "olives", "feta", "parsley", "lemons"]
+    },
+    "tue_salmon_orzo_peas_spinach_tomatoes": {
+      "key_items": ["salmon", "orzo", "cherry tomatoes", "spinach", "lemons", "feta", "peas_from_freezer"]
+    },
+    "wed_shrimp_rice_quickveg_cucumber": {
+      "key_items": ["shrimp", "rice", "spinach", "cherry tomatoes", "parsley", "cucumber"]
+    },
+    "thu_falafel_or_chickpea_bowls": {
+      "key_items": ["falafel_or_chickpeas", "orzo", "cucumber", "roma tomatoes", "olives", "hummus", "yogurt"]
+    }
+  },
+  "post_processing": {
+    "human_checkpoints": [
+      "Confirm store & fulfillment",
+      "Review chosen SKUs and sizes (steaks, salmon, shrimp, feta, dressing)",
+      "Approve any subs with >15% price delta or flavor-impacting differences",
+      "Cart review before checkout"
+    ],
+    "artifacts": [
+      "csv_line_items",
+      "links_per_item",
+      "price_summary",
+      "out_of_stock_report"
+    ]
+  }
+}
